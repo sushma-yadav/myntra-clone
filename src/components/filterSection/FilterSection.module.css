@@ -1,0 +1,9 @@
+.filter {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.checkboxLabel label {
+    font-size: 14px;
+    font-weight: 300;
+}

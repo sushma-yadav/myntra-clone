@@ -1,0 +1,16 @@
+.productWrapper {
+    height: max-content;
+}
+
+.productSection {
+    display: flex;
+}
+
+.filterSection {
+    width: 20%;
+    background-color: bisque;
+}
+
+.products {
+    width: 80%;
+}
