@@ -49,23 +49,23 @@ function Header() {
                         <input type="text" placeholder="Seach for products, brands and more" />
                     </div>
                     <div className={styles.headerIcons}>
-                        <div className={styles.icons}>
+                        <Link to="/login" className={styles.icons}>
                             <i class="far fa-user"></i>
                             <p>Profile</p>
-                        </div>
-                        <div className={styles.icons}>
+                        </Link>
+                        <Link to="wishlist" className={styles.icons}>
                             <i class="far fa-heart"></i>
                             <p>Wishlist</p>
-                        </div>
-                        <div className={styles.icons}>
-                            <i class="far fa-heart"></i>
+                        </Link>
+                        <Link to="/cart" className={styles.icons}>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                             <p>Bag</p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 export default Header;

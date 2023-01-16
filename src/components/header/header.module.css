@@ -99,6 +99,7 @@
 .headerIcons .icons {
     margin: 0 15px;
     text-align: center;
+    cursor: pointer;
 }
 
 .headerIcons .icons p {
