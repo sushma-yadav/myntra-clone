@@ -12,7 +12,7 @@ function Banner() {
     return (
         <div className='banner-section'>
             <div className="swiffy-slider slider-nav-page data-slider-nav-autoplay-interval">
-                <ul class="slider-container">
+                <ul className="slider-container">
                     <li><img src={banner01} alt="" /></li>
                     <li><img src={banner02} alt="" /></li>
                     <li><img src={banner03} alt="" /></li>

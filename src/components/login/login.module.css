@@ -9,13 +9,26 @@
 .login .loginModal {
     width: 500px;
     padding: 2rem;
+}
+
+.login .loginModal .imageDiv {
     background-color: #fff;
+}
+
+.login .loginModal .imageDiv img {
+    width: 436px;
+}
+
+.login .loginModal .imageDiv p {
+    visibility: hidden;
 }
 
 .login .loginModal form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 2rem;
+    background-color: #fff;
 }
 
 .login .loginModal form input {
@@ -41,4 +54,16 @@
     color: #fff;
     background-color: #f25278;
     cursor: pointer;
+}
+
+.login .loginModal form button:disabled {
+    background-color: gray !important;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -20px;
+    text-transform: capitalize;
 }

@@ -15,7 +15,7 @@ function Header() {
                     {
                         linkItems.map((item, index) => {
                             return (
-                                <li><a href={item.url}>{item.name}</a></li>
+                                <li key={index}><a href={item.url}>{item.name}</a></li>
                             )
                         })
                     }
@@ -24,7 +24,7 @@ function Header() {
             <div className={styles.headerContainer}>
                 <div className={styles.headerLeft}>
                     <div className={styles.toggle}>
-                        <i class="fas fa-bars" onClick={() => setShowToggle(!showToggle)}></i>
+                        <i className="fas fa-bars" onClick={() => setShowToggle(!showToggle)}></i>
                     </div>
                     <div className={styles.logo}>
                         <Link to="/">
@@ -36,7 +36,7 @@ function Header() {
                             {
                                 linkItems.map((item, index) => {
                                     return (
-                                        <li><a href={item.url}>{item.name}</a></li>
+                                        <li key={index}><a href={item.url}>{item.name}</a></li>
                                     )
                                 })
                             }
@@ -45,20 +45,20 @@ function Header() {
                 </div>
                 <div className={styles.headerRight}>
                     <div className={styles.search}>
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                         <input type="text" placeholder="Seach for products, brands and more" />
                     </div>
                     <div className={styles.headerIcons}>
                         <Link to="/login" className={styles.icons}>
-                            <i class="far fa-user"></i>
+                            <i className="far fa-user"></i>
                             <p>Profile</p>
                         </Link>
                         <Link to="wishlist" className={styles.icons}>
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                             <p>Wishlist</p>
                         </Link>
                         <Link to="/cart" className={styles.icons}>
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                             <p>Bag</p>
                         </Link>
                     </div>

@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.container label {
+    font-size: 14px;
+    color: #ff1493;
+}
+
+.container input {
+    height: 40px;
+    padding: 5px 8px;
+    border: 1px solid gray;
+}
+
+.container input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+}

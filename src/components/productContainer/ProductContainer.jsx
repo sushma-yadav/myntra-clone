@@ -10,6 +10,7 @@ export default function ProductContainer() {
                 productData.map((item, index) => {
                     return (
                         <Product
+                            key={index}
                             productImage={item.productImage}
                             brand={item.brand}
                             productDescription={item.productDescription}
