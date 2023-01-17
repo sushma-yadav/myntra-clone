@@ -2,7 +2,7 @@ import styles from "./Product.module.css"
 
 const Product = (
     {
-        productImage, brand, productDescription, discountedPrice, actualPrice
+        productImage, filteredName, productDescription, discountedPrice, actualPrice
     }
 ) => {
     return (
@@ -11,7 +11,7 @@ const Product = (
                 <img src={productImage} />
             </div>
             <div className={styles.productDetails}>
-                <p className={styles.brand}>{brand}</p>
+                <p className={styles.brand}>{filteredName}</p>
                 <div className={styles.productDesc}>
                     <p >{productDescription}</p>
 
