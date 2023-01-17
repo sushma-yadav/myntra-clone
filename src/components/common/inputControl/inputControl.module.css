@@ -13,9 +13,13 @@
     height: 40px;
     padding: 5px 8px;
     border: 1px solid gray;
+    color: gray;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .container input::placeholder {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
+    color: rgb(150, 147, 147);
 }
