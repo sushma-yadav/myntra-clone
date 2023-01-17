@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --pink: #f25278;
+}
+
 a {
     text-decoration: none;
     color: #000;

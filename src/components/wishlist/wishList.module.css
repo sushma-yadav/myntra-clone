@@ -1,0 +1,70 @@
+.wishlistSection {
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.wishlistSection .wishlistCard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: max-content;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.wishlistSection .wishlistCard .productImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.productDescription {
+    padding: 1rem;
+}
+
+.productDescription .productName {
+    font-size: 16px;
+    font-weight: 300;
+    color: gray;
+}
+
+.productDescription .productPrice {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.productPrice .discountPrice {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.productPrice .actualPrice {
+    color: gray;
+    font-size: 10px;
+    font-weight: 200;
+    text-decoration: line-through;
+}
+
+.productPrice .offPrice {
+    color: orangered;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.moveBagButton {
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+}
+
+.moveBagButton p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--pink);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
