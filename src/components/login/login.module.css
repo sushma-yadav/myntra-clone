@@ -55,7 +55,7 @@
     background-color: gray !important;
 }
 
-.errorMsg {
+.login .loginModal form .errorMsg {
     color: red;
     font-size: 12px;
     font-weight: 400;

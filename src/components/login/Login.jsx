@@ -16,25 +16,73 @@ export default function Login() {
     })
 
     const navigate = useNavigate()
-
-    const [error, setError] = useState("")
+    const [validName, setValidName] = useState(true)
+    const [validEmail, setValidEmail] = useState(true)
+    const [validPassword, setValidPassword] = useState(true)
+    const [error, setError] = useState(false)
     const [submitButtondisabled, setSubmitButtonDisabled] = useState(false)
+
+    const validateName = (name) => {
+        if (
+            String(name)
+                .toLowerCase()
+                .match((/^[a-zA-Z ]{2,30}$/))
+        ) {
+            setValidName(true)
+        } else {
+            setValidName(false)
+        }
+    };
+
+    const validateEmail = (email) => {
+        if (
+            String(email)
+                .toLowerCase()
+                .match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                )
+        ) {
+            setValidEmail(true);
+        } else {
+            setValidEmail(false);
+        }
+    };
+
+    const validatePassword = (password) => {
+        if (
+            String(password)
+                .toLowerCase()
+                .match((/[0-9a-zA-Z]{6,}/))
+        ) {
+            setValidPassword(true)
+        } else {
+            setValidPassword(false)
+        }
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setSubmitButtonDisabled(true)
-        createUserWithEmailAndPassword(auth, data.email, data.password)
-            .then(async (res) => {
-                const user = res.user
-                setSubmitButtonDisabled(false)
-                updateProfile(user, {
-                    displayName: data.name
-                })
-                navigate('/')
-            }).catch((err) => {
-                setError(err.message)
-                setSubmitButtonDisabled(false)
-            })
+        if (data.name.length === 0 || data.email.length === 0 || data.password.length === 0) {
+            setError(true)
+        }
+        else {
+            if (validEmail || validName || validPassword) {
+                setSubmitButtonDisabled(true)
+                createUserWithEmailAndPassword(auth, data.email, data.password)
+                    .then(async (res) => {
+                        const user = res.user
+                        setSubmitButtonDisabled(false)
+                        updateProfile(user, {
+                            displayName: data.name
+                        })
+                        navigate('/')
+                    }).catch((err) => {
+                        setError(err.message)
+                        setSubmitButtonDisabled(false)
+                    })
+            }
+        }
+
 
     }
 
@@ -49,17 +97,28 @@ export default function Login() {
                     <h4 className={styles.loginHeading}>Login</h4>
                     <InputControl
                         placeholder="Enter your name"
-                        onChange={(e) => { setData((prev) => ({ ...prev, name: e.target.value })) }}
+                        onChange={(e) => {
+                            validateName(e.target.value)
+                            setData((prev) => ({ ...prev, name: e.target.value }))
+                        }}
                     />
+                    {error && data.name.length === 0 ? <span className={styles.errorMsg}> This Field is Required</span> : !validName ? <span className={styles.errorMsg}>Enter valid name</span> : ''}
                     <InputControl
                         placeholder="Enter your Email"
-                        onChange={(e) => { setData((prev) => ({ ...prev, email: e.target.value })) }}
+                        onChange={(e) => {
+                            validateEmail(e.target.value)
+                            setData((prev) => ({ ...prev, email: e.target.value }))
+                        }}
                     />
+                    {error && data.email.length === 0 ? <span className={styles.errorMsg}> This Field is Required</span > : !validEmail ? <span className={styles.errorMsg}>Enter valid email</span> : ''}
                     <InputControl
                         placeholder="Enter your password"
-                        onChange={(e) => { setData((prev) => ({ ...prev, password: e.target.value })) }}
+                        onChange={(e) => {
+                            validatePassword(e.target.value)
+                            setData((prev) => ({ ...prev, password: e.target.value }))
+                        }}
                     />
-                    {/* <div style={{ backgroundColor: "red", color: "#ffffff", width: "100%", fontSize: "12px", fontWeight: "300px", padding: "5px" }}>{error}</div> */}
+                    {error && data.password.length === 0 ? <span className={styles.errorMsg}> This Field is Required</span> : !validPassword ? <span className={styles.errorMsg}>Enter minimum 6 characters</span> : ''}
                     <button type='submit' onClick={handleSubmit} disabled={submitButtondisabled}>Submit</button>
                 </form>
             </div>
