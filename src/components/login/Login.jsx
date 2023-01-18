@@ -59,7 +59,7 @@ export default function Login() {
                         placeholder="Enter your password"
                         onChange={(e) => { setData((prev) => ({ ...prev, password: e.target.value })) }}
                     />
-                    <div style={{ backgroundColor: "red", color: "#ffffff", width: "100%", fontSize: "12px", fontWeight: "300px", padding: "5px" }}>{error}</div>
+                    {/* <div style={{ backgroundColor: "red", color: "#ffffff", width: "100%", fontSize: "12px", fontWeight: "300px", padding: "5px" }}>{error}</div> */}
                     <button type='submit' onClick={handleSubmit} disabled={submitButtondisabled}>Submit</button>
                 </form>
             </div>
