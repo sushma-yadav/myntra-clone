@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
 import { auth } from '../../firebase'
 import { useNavigate } from 'react-router-dom'
+import { Oval } from 'react-loader-spinner'
 
 export default function Login() {
 
@@ -119,7 +120,37 @@ export default function Login() {
                         }}
                     />
                     {error && data.password.length === 0 ? <span className={styles.errorMsg}> This Field is Required</span> : !validPassword ? <span className={styles.errorMsg}>Enter minimum 6 characters</span> : ''}
-                    <button type='submit' onClick={handleSubmit} disabled={submitButtondisabled}>Submit</button>
+                    <button type='submit' onClick={handleSubmit}>
+                        {submitButtondisabled
+                            ? <Oval
+                                height={30}
+                                width={30}
+                                color="#fff"
+                                wrapperStyle={{}}
+                                wrapperClass=""
+                                visible={true}
+                                ariaLabel='oval-loading'
+                                secondaryColor="#fff"
+                                strokeWidth={5}
+                                strokeWidthSecondary={5}
+                            />
+                            :
+                            'Submit'}
+                    </button>
+                    <Oval
+                        height={30}
+                        width={30}
+                        color="#fffff"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
+                        ariaLabel='oval-loading'
+                        secondaryColor="#ffffff"
+                        strokeWidth={5}
+                        strokeWidthSecondary={5}
+
+                    />
+
                 </form>
             </div>
         </div >

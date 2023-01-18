@@ -49,10 +49,9 @@
     color: #fff;
     background-color: #f25278;
     cursor: pointer;
-}
+    display: flex;
+    justify-content: center;
 
-.login .loginModal form button:disabled {
-    background-color: gray !important;
 }
 
 .login .loginModal form .errorMsg {
