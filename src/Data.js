@@ -110,12 +110,82 @@ export const productData = [{
 },
 {
     brand: "Netra Creation",
-    productDescription: 'Girls Mini/Short Party Dress  (Pink, Sleeveless)',
-    actualPrice: '3999',
-    discountedPrice: '1799',
-    productImage: 'https://rukminim1.flixcart.com/image/612/612/l2w7b0w0/kids-dress/v/6/q/2-3-years-kids-pink-frock-vol-01-netra-creation-original-image4uy68fmmxuh.jpeg?q=70',
+    productDescription: 'Artvibes Positive Quote Decorative Wooden Wall Hanging for Home Decor Item (WH_3231N)  (31 inch X 12 inch, Grey)',
+    actualPrice: '999',
+    discountedPrice: '259',
+    productImage: 'https://rukminim1.flixcart.com/image/612/612/l2nmnww0/wall-decoration/v/j/d/positive-quote-wooden-wall-hanging-for-home-decor-office-gift-wh-original-imagdy2fguamjzar.jpeg?q=70',
+    rating: '4.3',
+    reviews: '41',
+    category: 'H'
+},
+{
+    brand: "Netra Creation",
+    productDescription: "Decal O Decal Wall Decals ' Pink Tree With Birds Cage And Nest '(PVC Vinyl,Multicolour) Large Self Adhesive Sticker  (Pack of 1)",
+    actualPrice: '899',
+    discountedPrice: '119',
+    productImage: 'https://rukminim1.flixcart.com/image/416/416/kekadu80/sticker/z/z/k/wall-decals-pink-tree-with-birds-and-nest-wall-stickers-pvc-original-imafv826gpzauzjr.jpeg?q=70',
+    rating: '4.3',
+    reviews: '4644',
+    category: 'H'
+},
+{
+    brand: "Netra Creation",
+    productDescription: "Ryme Dream Catcher With Light For Home Decoration, Garden Decoration Decorative Showpiece - 55 cm  (Feather, Multicolor)",
+    actualPrice: '599',
+    discountedPrice: '225',
+    productImage: 'https://rukminim1.flixcart.com/image/416/416/xif0q/showpiece-figurine/u/s/y/4-15-multicn-ryme-55-original-imagg8sy67tmesyt.jpeg?q=70',
+    rating: '4.1',
+    reviews: '11',
+    category: 'H'
+},
+{
+    brand: "Biotique",
+    productDescription: 'BIOTIQUE morning nectar skin moisturizer  (190 ml)',
+    actualPrice: '280',
+    discountedPrice: '154',
+    productImage: 'https://rukminim1.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/k/3/-original-imaghrxektqjatuz.jpeg?q=70',
+    rating: '4.4',
+    reviews: '17434',
+    category: 'B'
+},
+{
+    brand: "SWISS BEAUTY",
+    productDescription: 'SWISS BEAUTY HD Matte Lipstick (SB-212-16)  (Red Letter, 3.5 g)',
+    actualPrice: '348',
+    discountedPrice: '255',
+    productImage: 'https://rukminim1.flixcart.com/image/612/612/xif0q/lipstick/u/z/m/3-5-hd-matte-lipstick-sb-212-16-swiss-beauty-original-imaghhu97pmda8j8.jpeg?q=70',
     rating: '4.2',
-    reviews: '58665',
-    category: 'K'
+    reviews: '3086',
+    category: 'B'
+},
+{
+    brand: "MAYBELLINE",
+    productDescription: 'MAYBELLINE NEW YORK Fit Me Matte+Poreless Liquid Tube Foundation  (128 Warm Nude, 18 ml)',
+    actualPrice: '325',
+    discountedPrice: '219',
+    productImage: 'https://rukminim1.flixcart.com/image/416/416/xif0q/foundation/h/u/2/-original-imagg278fmqqveye.jpeg?q=70',
+    rating: '4.4',
+    reviews: '17434',
+    category: 'B'
+},
+{
+    brand: "Biotique",
+    productDescription: 'BIOTIQUE morning nectar skin moisturizer  (190 ml)',
+    actualPrice: '280',
+    discountedPrice: '154',
+    productImage: 'https://rukminim1.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/k/3/-original-imaghrxektqjatuz.jpeg?q=70',
+    rating: '4.4',
+    reviews: '17434',
+    category: 'B'
+},
+{
+    brand: "Biotique",
+    productDescription: 'BIOTIQUE morning nectar skin moisturizer  (190 ml)',
+    actualPrice: '280',
+    discountedPrice: '154',
+    productImage: 'https://rukminim1.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/k/3/-original-imaghrxektqjatuz.jpeg?q=70',
+    rating: '4.4',
+    reviews: '17434',
+    category: 'B'
 },
 ]
