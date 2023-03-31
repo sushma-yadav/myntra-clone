@@ -6,7 +6,6 @@ import Login from '../login/Login';
 import ProductContainerBeauty from '../productContainer/ProductContainerBeauty';
 import ProductContainerHomeDecor from '../productContainer/ProductContainerHomeDecor';
 import ProductContainerKid from '../productContainer/ProductContainerKid';
-import ProductContainer from '../productContainer/ProductContainerKid';
 import ProductContainerMen from '../productContainer/productContainerMen';
 import ProductContainerWomen from '../productContainer/ProductContainerWomen';
 import WishList from '../wishlist/WishList';

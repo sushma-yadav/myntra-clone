@@ -8,7 +8,7 @@ const Product = (
     return (
         <div className={styles.product}>
             <div className={styles.productImage}>
-                <img src={productImage} />
+                <img src={productImage} alt="product" />
             </div>
             <div className={styles.productDetails}>
                 <p className={styles.brand}>{filteredName}</p>
